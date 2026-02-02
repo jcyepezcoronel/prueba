@@ -11,7 +11,6 @@ export class ZohoCrmService {
   constructor(private http: HttpClient) {}
 
   async syncUsers(users: User[]) {
-    console.log("este")
     const body = {
       data: users.map(u => ({
         Last_Name: u.name,
