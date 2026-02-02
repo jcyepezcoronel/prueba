@@ -1,0 +1,20 @@
+<div class="edit-modal" *ngIf="tempUser">
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name</label>
+    <input id="name" [(ngModel)]="tempUser.name" name="name" required />
+
+    <label for="email">Email</label>
+    <input id="email" [(ngModel)]="tempUser.email" name="email" required type="email" />
+
+    <label for="phone">Phone</label>
+    <input id="phone" [(ngModel)]="tempUser.phone" name="phone" required />
+
+    <label for="companyName">Company Name</label>
+    <input id="companyName" [(ngModel)]="tempUser.company.name" name="companyName" required />
+
+    <div style="display: flex; gap: 8px; margin-top: 8px;">
+      <button type="submit">Guardar y Enviar a CRM</button>
+      <button type="button" (click)="onCancel()">Cancelar</button>
+    </div>
+  </form>
+</div>

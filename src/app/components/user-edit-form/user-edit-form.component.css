@@ -1,0 +1,61 @@
+.edit-modal {
+  padding: 22px 28px 26px 28px;
+  background: #fff;
+  border: 1.5px solid #dde2e8;
+  border-radius: 8px;
+  margin-top: 32px;
+  width: 400px;
+  box-shadow: 0 1px 12px rgba(80,90,120,0.10);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: 500;
+  color: #28475a;
+  margin-bottom: 4px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1.5px solid #bfc8d1;
+  margin-bottom: 2px;
+  font-size: 1em;
+  background: #f8fafc transition;
+  transition: border-color 0.17s;
+}
+input:focus {
+  border: 1.5px solid #5b9df9;
+  outline: none;
+  background: #f1f6fb;
+}
+
+/* Botones de acción */
+button {
+  margin-top: 6px;
+  padding: 7px 18px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px;
+  transition: background .17s;
+}
+
+button[type="button"] {
+  background: #9aa7ba;
+}
+
+button[type="submit"]:hover {
+  background: #1258a6;
+}
+button[type="button"]:hover {
+  background: #64748b;
+}
